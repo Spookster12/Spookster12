@@ -1,0 +1,131 @@
+/* Gets rid of the empty space on the sides */
+body{
+    margin: 0%;
+}
+
+/* Centers nav bar don't want other containers centered right now */
+.nav-container {
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.9);
+}
+
+/* Nav bar  */
+.Nav{
+    display: inline;
+    color: grey;
+    padding: 0%;
+    margin: 0;
+}
+
+/* makes the nav buttons look nice */
+.Nav li {
+    display: inline-block;
+    position: relative;
+    border: 1px solid black;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px 1%;
+    text-align: center;
+    margin: 2px;
+}
+
+/* makes the buttons darker grey when hovered */
+.Nav li:hover{
+    background-color: gray;
+}
+
+/* Makes the left column */
+.column-l{
+    float: left;
+    width: 50%;
+    padding: 4px;
+    height: 400px;
+    background-color: gray;
+}
+
+/* Makes the right column */
+.column-r{
+    float: right;
+    width: 49%;
+    padding: 4px;
+    height: 400px;
+    background-color: lightgray;
+}
+
+/* Edits the video to center it */
+video{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Changes all the headings to center */
+h1 {
+    text-align: center;
+}
+
+/* Edits paragraph to center enlarges and spaces between letters */
+p{
+    text-align: center;
+    font-size: larger;
+    letter-spacing: 1.5px;
+}
+
+/* Makes space */
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* style for the about section */
+.about-section{
+    background-color: rgba(300,300,300,1);
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 500px;
+}
+
+/* style for the forms */
+input[type=text]{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+/* Adds hover effect for forms */
+input[type=text]:hover{
+    background-color: lightgray;
+    box-shadow: darkgray;
+}
+
+/* style for button */
+input[type=submit]{
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* adds hover effect for button */
+input[type=submit]:hover{
+    background-color: lightgrey;
+}
+
+/* adds background/border for visibilty on the label for forms */
+label{
+    padding: 5px;
+    margin: 2px;
+    background-color: white;
+    border: 1px solid black;
+}
